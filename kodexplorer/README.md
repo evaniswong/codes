@@ -3,9 +3,12 @@
 ## 适用于容器管理、开发及私有云搭建
 
 ### RUN
+```
+docker build -t kod_me:v1 .
+```
 
 ```
-docker run -d -p 889:80 --name kodexplorer -v "$PWD":/code baiyuetribe/kodexplorer
+docker run -d -p 889:80 --name kodexplorer -v "$PWD":/var/www/html baiyuetribe/kodexplorer
 ```
 
 然后打开浏览器，访问http://ip:889 就可以进入了。如需替换端口，请修改`889`端口值就行。
